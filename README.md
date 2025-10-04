@@ -26,7 +26,7 @@
 
 ---
 
-# Tips
+## Tips
 
 - Running PowerShell or Terminal as Administrator is recommended, though not always required.
 - If subtitles are not available in English and even auto-generate English, the downloader will try to download auto translated onces.
