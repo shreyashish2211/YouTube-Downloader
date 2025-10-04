@@ -1,8 +1,8 @@
-YouTube Downloader 
+# YouTube Downloader 
 
 ---
 
-General Instructions
+## General Instructions
 
 1. This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any  virus or malware to harm others.
 2. Copy the URL link of the YouTube video you want to download.
@@ -16,7 +16,7 @@ General Instructions
 
 ---
 
-Requirements
+## Requirements
 
 - This works only in Windows as this is a Windows build(I can't make other os builds).
 - Make sure you have FFmpeg installed.
@@ -26,7 +26,7 @@ Requirements
 
 ---
 
-Tips
+## Tips
 
 - Running PowerShell or Terminal as Administrator is recommended, though not always required.
 - If subtitles are not available in English and even auto-generate English, the downloader will try to download auto translated onces.
