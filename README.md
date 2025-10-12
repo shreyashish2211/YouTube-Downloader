@@ -18,9 +18,9 @@
 
 ## Requirements
 
-- This works only in Windows as this is a Windows build(I can't make other os builds).
-- Make sure you have FFmpeg installed.
-- To install via Windows, open Terminal or PowerShell(preferably as Administrator) and run this command:
+- __This works only in Windows as this is a Windows build(I can't make other os builds).__
+- __Make sure you have FFmpeg installed.__
+- __To install via Windows, open Terminal or PowerShell(preferably as Administrator) and run this command:__
   ```
   winget install FFmpeg for yt-dlp
   ```
