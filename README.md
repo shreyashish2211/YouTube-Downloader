@@ -24,7 +24,7 @@
   ```
   winget install FFmpeg for yt-dlp
   ```
-- The program may show a security warning the first time you run it. If this happens, click More info -> Run anyway.
+- __The program may show a security warning the first time you run it. If this happens, click More info -> Run anyway.__
 
 ---
 
