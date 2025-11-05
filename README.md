@@ -9,7 +9,8 @@
 3. Paste the URL link into "Enter the link to download." when you start the app.
 4. Choose the appropriate resolution you want to have while downloading video.
 5. Choose the appropriate downloader option:
-   - Youtube_downloader(audio): Downloads only the audio.
+   - Youtube_downloader(audio): Downloads only the audio in wav format(takes alot of disk space).
+   - Youtube_downloader(audio_alt): Same as Youtube_downloader(audio) but the difference is it saves in mp3 format(takes less disk space).
    - Youtube_downloader(subtitles): Download only the subtitles.
    - Youtube_downloader(video)_V1: Downloads video with audio (no subtitles).
    - Youtube_downloader(video)_V2: Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
