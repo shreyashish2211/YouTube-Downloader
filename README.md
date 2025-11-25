@@ -33,7 +33,7 @@
 
 - Running PowerShell or Terminal as Administrator is recommended, though not always required.
 - If subtitles are not available in English and even auto-generate English, the downloader will try to download auto translated onces.
-- Ensure your internet connection is stable amd good for faster and more reliable downloads.
+- Ensure your internet connection is stable and good for faster and more reliable downloads.
 - Youtube_downloader(video)_V2 may some fail in downloading videos and subtitles so use Youtube_downloader(video)_V1 for video and Youtube_downloade(subtitles) for subtitles to add the subtitles  in the video. Use this when Youtube_downloader(video)_V2 fails.
 - If anytime the downloader fails randomly trying do download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing.
 
