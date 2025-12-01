@@ -11,7 +11,8 @@
 5. Choose the appropriate downloader option:
    - Youtube_downloader(audio): Downloads only the audio in wav format(takes alot of disk space).
    - Youtube_downloader(audio_alt): Same as Youtube_downloader(audio) but the difference is it saves in mp3 format(takes less disk space).
-   - Youtube_downloader(subtitles): Download only the subtitles.
+   - Youtube_downloader(subtitles): Downloads only the Subtitles.
+   - Youtube_downloader(thumbnail): Downloads only Thumbnails only drawback is that its in webp format(I have tried my best in code to converting it to other picture format but it don't work while downloading). So you have to use a webp to other picture fromat converter it will in the internet or just use Microsoft photos to convert, or any other photo editing app you use.
    - Youtube_downloader(video)_V1: Downloads video with audio (no subtitles).
    - Youtube_downloader(video)_V2: Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
 
@@ -23,7 +24,7 @@
 - __Make sure you have FFmpeg installed.__
 - __To install via Windows, open Terminal or PowerShell(preferably as Administrator) and run this command:__
   ```
-  winget install FFmpeg for yt-dlp
+  winget install FFmpeg
   ```
 - __The program may show a security warning the first time you run it. If this happens, click on More info -> Run anyway.__
 
@@ -35,6 +36,6 @@
 - If subtitles are not available in English and even auto-generate English, the downloader will try to download auto translated onces.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
 - Youtube_downloader(video)_V2 may some fail in downloading videos and subtitles so use Youtube_downloader(video)_V1 for video and Youtube_downloade(subtitles) for subtitles to add the subtitles  in the video. Use this when Youtube_downloader(video)_V2 fails.
-- If anytime the downloader fails randomly trying do download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing.
+- If anytime the downloader fails randomly trying do download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing in Github.
 
 Thank you for downloading
