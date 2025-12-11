@@ -16,7 +16,7 @@
   code to convert it to other picture formats but it doesn't work while downloading the thumbnail). So you have to use a webp to other picture fromat converter online or just use Microsoft photos to convert, or any other photo editing app you use.
    - **Youtube_downloader(video)_V1:** Downloads video with audio (no subtitles).
    - **Youtube_downloader(video)_V2:** Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
-6. Type exit when you are done(For Youtube_downloader(video)_V1 and V2 it will as for resolution after typing exit so just press enter).
+6. Type exit when you are done, For Youtube_downloader(video)_V1 and V2 it will ask for resolution after typing exit so just press enter.
 
 ---
 
