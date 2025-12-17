@@ -4,7 +4,7 @@
 
 ## __General Instructions__
 
-1. This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any  virus or malware to harm others.
+1. This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any  virus or malware to harm others. I even share the source code you can check it out.
 2. Copy the URL link of the YouTube video you want to download.
 3. Paste the URL link into "Enter the link to download." when you start the app.
 4. Choose the appropriate resolution you want to have while downloading video.
