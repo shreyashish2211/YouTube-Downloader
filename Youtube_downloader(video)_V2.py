@@ -11,8 +11,8 @@ def download_video(link, resolution):
 
     ydl_opts = {
         'format': format_string,
-	'javascript': 'node',
-	'writesubtitles': True,
+	    'javascript': 'node',
+	    'writesubtitles': True,
         'writeautomaticsub': True,
         'writethumbnail': True,
         'sub_lang': ['en-US', 'en-GB', 'en-IN', 'en-AU', 'en-CA', 'en', 'hi'],
@@ -56,3 +56,4 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+
