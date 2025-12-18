@@ -31,7 +31,7 @@ def download_audio(link):
 def main_menu():
     while True:  
         print("\n============================== YouTube Audio Downloader ==============================")
-        print("                     =========== by Shreyashish Mitra ===========                           ")
+        print("                     =========== by Shreyashish Mitra ===========                       ")
         link = input("Enter the link to download (or type 'exit'): ").strip()
         
         if re.match(r'^https?://', link):
@@ -47,3 +47,4 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+
