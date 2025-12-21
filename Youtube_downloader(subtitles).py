@@ -5,10 +5,10 @@ def download_subtitle(link):
     ydl_opts = {
         'writesubtitles': True,
         'writeautomaticsub': True,
+        'subtitlesformat': 'srt/best',
         'subtitleslangs': ['en-US', 'en-GB', 'en-IN', 'en-AU', 'en-CA', 'en', 'hi'],
         'skip_download': True,
-        'outtmpl': '%(title)s.%(ext)s',
-        'subtitlesformat': 'best[ext=srt]/best'
+        'outtmpl': '%(title)s.200s.%(ext)s'
     }
 
     try:
