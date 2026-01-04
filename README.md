@@ -34,7 +34,7 @@
 ## __Tips__
 
 - Running PowerShell or Terminal as Administrator is recommended, though not always required.
-- If subtitles are not available in English/Hindi and even auto-generate English/Hindi, the downloader will try to download auto translated onces.
+- If subtitles are not available in English/Hindi and even auto-generate English/Hindi.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
 - Youtube_downloader(video)_V2 may fail in downloading some videos and subtitles so use Youtube_downloader(video)_V1 for video and Youtube_downloade(subtitles) for subtitles, to add the subtitles  in the video. **Use this when Youtube_downloader(video)_V2 fails.**
 - If anytime the downloader fails randomly try to download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing in Github.
