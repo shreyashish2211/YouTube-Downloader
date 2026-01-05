@@ -27,6 +27,8 @@ def download_audio(link):
             print("Download complete!")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading Audio:", e)
+    except Exception as e:
+        print("Unexpected error:", e)
 
 def main_menu():
     while True:  
@@ -47,4 +49,5 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+
 
