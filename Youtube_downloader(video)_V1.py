@@ -38,15 +38,16 @@ def main_menu():
         print("\n============================== YouTube Video Downloader ==============================")
         print("                     =========== by Shreyashish Mitra ===========                       ")
         link = input("Enter the link to download (or type 'exit'): ").strip()
+        
+        if link == 'exit':
+            print('Exiting Programme Bye bye...')
+            break
+        
         resolution = input("Enter the max resolution (e.g., 720, 1080, 1440): ").strip()
 
         if link and resolution.isdigit():
             print(f"Starting download at {resolution}p resolution...")
             download_video(link, resolution)
-
-        elif link == 'exit':
-            print('Exiting Programme Bye bye...')
-            break
 
         else:
             print("Invalid input. Please enter a valid link and resolution.")
