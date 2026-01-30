@@ -1,4 +1,5 @@
 import yt_dlp
+import os
 
 def download_video(link, resolution):
     # Format selection based on user input
@@ -30,6 +31,7 @@ def download_video(link, resolution):
             print(f"Fetching video information... (Max Resolution: {resolution}p)")
             ydl.download([link])
             print("Download complete!")
+            print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading video:", e)
 
@@ -53,3 +55,4 @@ def main_menu():
             print("Invalid input. Please enter a valid link and resolution.")
 if __name__ == "__main__":
     main_menu()
+
