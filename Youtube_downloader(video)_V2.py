@@ -1,5 +1,6 @@
 import yt_dlp 
 import re
+import os
 
 def download_video(link, resolution):
     # Format selection based on user input
@@ -11,8 +12,8 @@ def download_video(link, resolution):
 
     ydl_opts = {
         'format': format_string,
-	'javascript': 'node',
-	'writesubtitles': True,
+		'javascript': 'node',
+		'writesubtitles': True,
         'writeautomaticsub': True,
         'writethumbnail': True,
         'subtitlesformat': 'srt/best',
@@ -34,6 +35,7 @@ def download_video(link, resolution):
             print(f"Fetching video information... (Max Resolution: {resolution}p)")
             ydl.download([link])
             print("Download complete!")
+			print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading video:", e)
         
@@ -58,3 +60,4 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+
