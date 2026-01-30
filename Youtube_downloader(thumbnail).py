@@ -1,5 +1,6 @@
 import yt_dlp
 import re
+import os
 
 def download_thumbnail(link):
     ydl_opts = {
@@ -14,6 +15,7 @@ def download_thumbnail(link):
             print("Fetching video thumbnail information...")
             ydl.download([link])
             print("Download complete!")
+            print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading video thumbnail:", e)
     except Exception as e:
@@ -38,3 +40,4 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
+
