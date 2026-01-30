@@ -1,7 +1,9 @@
 import yt_dlp
 import re
+import os
 
 def download_audio(link):
+    
     ydl_opts = {
         'format': 'bestaudio/best',  # Download only the best audio quality
         'outtmpl': '%(title)s.%(ext)s',  # Save file name for the video title
@@ -25,6 +27,7 @@ def download_audio(link):
             print("Fetching information...")
             ydl.download([link])
             print("Download complete!")
+            print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading Audio:", e)
     except Exception as e:
@@ -49,5 +52,6 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+
 
 
