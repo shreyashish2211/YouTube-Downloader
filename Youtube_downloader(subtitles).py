@@ -1,7 +1,9 @@
 import yt_dlp
 import re
+import os
 
 def download_subtitle(link):
+    
     ydl_opts = {
         'writesubtitles': True,
         'writeautomaticsub': True,
@@ -16,6 +18,7 @@ def download_subtitle(link):
             print("Fetching video subtitle information...")
             ydl.download([link])
             print("Download complete!")
+            print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading video:", e)
     except Exception as e:
@@ -40,4 +43,5 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
+
 
