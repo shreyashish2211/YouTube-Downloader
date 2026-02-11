@@ -3,7 +3,6 @@ import re
 import os
 
 def download_audio(link):
-    
     ydl_opts = {
         'format': 'bestaudio/best',  # Download only the best audio quality
         'outtmpl': '%(title)s.%(ext)s',  # Save file name for the video title
@@ -20,6 +19,7 @@ def download_audio(link):
             'key': 'EmbedThumbnail',  # Optional: Also embed the video thumbnail
             'already_have_thumbnail': False # Let yt-dlp manage the thumbnail file
         }],
+        'no_warnings': True,
     }
 
     try:
@@ -30,13 +30,11 @@ def download_audio(link):
             print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading Audio:", e)
-    except Exception as e:
-        print("Unexpected error:", e)
 
 def main_menu():
     while True:  
         print("\n============================== YouTube Audio Downloader ==============================")
-        print("                     =========== by Shreyashish Mitra ===========                       ")
+        print("                     =========== by Shreyashish Mitra ===========                           ")
         link = input("Enter the link to download (or type 'exit'): ").strip()
         
         if re.match(r'^https?://', link):
@@ -52,6 +50,3 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
-
-
-

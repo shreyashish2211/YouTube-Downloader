@@ -10,7 +10,8 @@ def download_subtitle(link):
         'subtitlesformat': 'srt/best',
         'subtitleslangs': ['en-US', 'en-GB', 'en-IN', 'en-AU', 'en-CA', 'en', 'hi'],
         'skip_download': True,
-        'outtmpl': '%(title).200s.%(ext)s'
+        'outtmpl': '%(title).200s.%(ext)s',
+        'no_warnings': True,
     }
 
     try:
@@ -43,5 +44,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
-

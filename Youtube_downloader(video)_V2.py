@@ -12,8 +12,8 @@ def download_video(link, resolution):
 
     ydl_opts = {
         'format': format_string,
-		'javascript': 'node',
-		'writesubtitles': True,
+	'javascript': 'node',
+	'writesubtitles': True,
         'writeautomaticsub': True,
         'writethumbnail': True,
         'subtitlesformat': 'srt/best',
@@ -28,6 +28,7 @@ def download_video(link, resolution):
             }],
         'merge_output_format': 'mp4',    # Merge video and audio into an MP4 file
         'windowsfilenames': True,
+        'no_warnings': True,
     }
 
     try:
@@ -35,7 +36,7 @@ def download_video(link, resolution):
             print(f"Fetching video information... (Max Resolution: {resolution}p)")
             ydl.download([link])
             print("Download complete!")
-			print(f"Files should be visible here: {os.getcwd()}")
+            print(f"Files should be visible here: {os.getcwd()}")
     except yt_dlp.utils.DownloadError as e:
         print("Error downloading video:", e)
         
@@ -60,4 +61,3 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
-

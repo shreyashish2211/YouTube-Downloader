@@ -3,11 +3,13 @@ import re
 import os
 
 def download_thumbnail(link):
+    
     ydl_opts = {
         'skip_download': True,
         'writethumbnail': True,
         'convertthumbnails': 'png',
         'outtmpl': '%(title).200s.%(ext)s',
+        'no_warnings': True,
     }
 
     try:
@@ -40,4 +42,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
