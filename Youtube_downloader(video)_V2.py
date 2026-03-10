@@ -11,8 +11,8 @@ def download_video(link, resolution):
 
     ydl_opts = {
         'format': format_string,
-	'javascript': 'node',
-	'writesubtitles': True,
+	    'javascript': 'node',
+	    'writesubtitles': True,
         'writeautomaticsub': True,
         'writethumbnail': True,
         'subtitlesformat': 'vtt/best',
