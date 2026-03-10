@@ -39,4 +39,16 @@
 - `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles, to add the subtitles  in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
 - If anytime the downloader fails randomly try to download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing in Github.
 
+---
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=YouTube-Downloader%2FYouTube-Downloader&type=date&logscale=&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=YouTube-Downloader/YouTube-Downloader&type=date&theme=dark&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=YouTube-Downloader/YouTube-Downloader&type=date&logscale&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=YouTube-Downloader/YouTube-Downloader&type=date&logscale&legend=top-left" />
+ </picture>
+</a>
+
 Thank you for checking out this project!
