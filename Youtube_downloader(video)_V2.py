@@ -1,13 +1,12 @@
-import yt_dlp 
-import re
+import yt_dlp
 import os
 
 def download_video(link, resolution):
     # Format selection based on user input
     format_string = (
-        f"(bestvideo[vcodec!*=av01][fps>=60][height<={resolution}]+bestaudio[ext=m4a])/"
-        f"(bestvideo[vcodec!*=av01][height<={resolution}]+bestaudio[ext=m4a])/"
-        f"best[ext=mp4][fps>=60][height<={resolution}]"
+        f"(bestvideo[height<={resolution}]+bestaudio)/"
+        f"(bestvideo[height<={resolution}]+bestaudio)/"
+        f"best[height<={resolution}]"
     )
 
     ydl_opts = {
@@ -16,7 +15,7 @@ def download_video(link, resolution):
 	'writesubtitles': True,
         'writeautomaticsub': True,
         'writethumbnail': True,
-        'subtitlesformat': 'srt/best',
+        'subtitlesformat': 'vtt/best',
         'sub_lang': ['en-US', 'en-GB', 'en-IN', 'en-AU', 'en-CA', 'en', 'hi'],
         'outtmpl': '%(title).200s.%(ext)s',
         'postprocessors': [{
@@ -29,6 +28,7 @@ def download_video(link, resolution):
         'merge_output_format': 'mp4',    # Merge video and audio into an MP4 file
         'windowsfilenames': True,
         'no_warnings': True,
+        'noplaylist': False,
     }
 
     try:
@@ -37,8 +37,8 @@ def download_video(link, resolution):
             ydl.download([link])
             print("Download complete!")
             print(f"Files should be visible here: {os.getcwd()}")
-    except yt_dlp.utils.DownloadError as e:
-        print("Error downloading video:", e)
+    except Exception:
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
         
 def main_menu():
     while True:
@@ -61,3 +61,4 @@ def main_menu():
             
 if __name__ == "__main__":
     main_menu()
+

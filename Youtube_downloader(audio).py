@@ -20,6 +20,7 @@ def download_audio(link):
             'already_have_thumbnail': False # Let yt-dlp manage the thumbnail file
         }],
         'no_warnings': True,
+        'noplaylist': False,
     }
 
     try:
@@ -28,8 +29,9 @@ def download_audio(link):
             ydl.download([link])
             print("Download complete!")
             print(f"Files should be visible here: {os.getcwd()}")
-    except yt_dlp.utils.DownloadError as e:
-        print("Error downloading Audio:", e)
+            
+    except Exception:
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
 
 def main_menu():
     while True:  

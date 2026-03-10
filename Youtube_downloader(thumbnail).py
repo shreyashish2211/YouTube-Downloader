@@ -10,6 +10,7 @@ def download_thumbnail(link):
         'convertthumbnails': 'png',
         'outtmpl': '%(title).200s.%(ext)s',
         'no_warnings': True,
+        'noplaylist': False,
     }
 
     try:
@@ -18,10 +19,9 @@ def download_thumbnail(link):
             ydl.download([link])
             print("Download complete!")
             print(f"Files should be visible here: {os.getcwd()}")
-    except yt_dlp.utils.DownloadError as e:
-        print("Error downloading video thumbnail:", e)
-    except Exception as e:
-        print("Unexpected error:", e)
+            
+    except Exception:
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
 
 def main_menu():
     while True:

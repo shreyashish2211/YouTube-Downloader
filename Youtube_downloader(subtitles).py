@@ -7,11 +7,12 @@ def download_subtitle(link):
     ydl_opts = {
         'writesubtitles': True,
         'writeautomaticsub': True,
-        'subtitlesformat': 'srt/best',
+        'subtitlesformat': 'vtt/best',
         'subtitleslangs': ['en-US', 'en-GB', 'en-IN', 'en-AU', 'en-CA', 'en', 'hi'],
         'skip_download': True,
         'outtmpl': '%(title).200s.%(ext)s',
         'no_warnings': True,
+        'noplaylist': False,
     }
 
     try:
@@ -20,10 +21,9 @@ def download_subtitle(link):
             ydl.download([link])
             print("Download complete!")
             print(f"Files should be visible here: {os.getcwd()}")
-    except yt_dlp.utils.DownloadError as e:
-        print("Error downloading video:", e)
-    except Exception as e:
-        print("Unexpected error:", e)
+            
+    except Exception:
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
         
 def main_menu():
     while True:
