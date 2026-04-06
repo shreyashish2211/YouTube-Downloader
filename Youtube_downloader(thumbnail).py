@@ -3,7 +3,6 @@ import re
 import os
 
 def download_thumbnail(link):
-    
     ydl_opts = {
         'skip_download': True,
         'writethumbnail': True,

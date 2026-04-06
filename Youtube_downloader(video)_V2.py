@@ -2,7 +2,6 @@ import yt_dlp
 import os
 
 def download_video(link, resolution):
-    # Format selection based on user input
     format_string = (
         f"(bestvideo[height<={resolution}]+bestaudio)/"
         f"(bestvideo[height<={resolution}]+bestaudio)/"

@@ -3,7 +3,6 @@ import re
 import os
 
 def download_subtitle(link):
-    
     ydl_opts = {
         'writesubtitles': True,
         'writeautomaticsub': True,
