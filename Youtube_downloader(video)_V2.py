@@ -3,8 +3,8 @@ import os
 
 def download_video(link, resolution):
     format_string = (
-        f"(bestvideo[height<={resolution}]+bestaudio)/"
-        f"(bestvideo[height<={resolution}]+bestaudio)/"
+        f"(bestvideo[height<={resolution}]+bestaudio[ext=m4a])/"
+        f"(bestvideo[height<={resolution}]+bestaudio[ext=m4a])/"
         f"best[height<={resolution}]"
     )
 
