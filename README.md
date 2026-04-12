@@ -15,7 +15,6 @@
    - `Youtube_downloader(video)_V1:` Downloads video with audio (no subtitles).
    - `Youtube_downloader(video)_V2:` Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
 6. Type exit when you are done.
-7. __**IMPORTAT NOTE: PLEASE DON'T DELETE `YouTube.com_cookies.txt` as It make sure you are not a bot and lets you download YouTube content, in the latest update yt-dlp has made it mandtory to have this. It lets yt-dlp know you have sign in to YouTube.**__
 
 ---
 
