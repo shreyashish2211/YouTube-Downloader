@@ -1,42 +1,71 @@
 # __YouTube Downloader__ 
 
+__A safe, efficient, and user-friendly tool for downloading YouTube content across different platforms.__
+
 ---
 
 ## __General Instructions__
 
-1. This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I even share the source code you can check it out.
-2. Copy the URL link of the YouTube video you want to download.
-3. Paste the URL link into "Enter the link to download." when you start the app.
-4. Choose the appropriate resolution you want to have while downloading video.
-5. Choose the appropriate downloader option:
-   - `Youtube_downloader(audio): ` Downloads only the audio in mp3 format.
+1. **Safety First:** This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I have even shared the source code you can check it out.
+2. **Copy URL:** Copy the URL link of the YouTube video you want to download.
+3. **Paste URL:** Paste the URL link into "Enter the link to download." when you start the app.
+4. **Resolution:** Choose the appropriate resolution you want to have while downloading video.
+5. **Choose the appropriate downloader option:**
+   - `Youtube_downloader(audio):` Downloads only the audio in `.mp3` format.
    - `Youtube_downloader(subtitles):` Downloads only the Subtitles i.e. English and Hindi subtitles.
-   - `Youtube_downloader(thumbnail):` Downloads only Thumbnails, but the only drawback is that it is in webp format (I have tried my best in the code to convert it to other picture formats but it doesn't work while downloading the thumbnail). So you have to use a webp to other picture fromat converter online or just use Microsoft photos to convert, or any other photo editing app you use.
+   - `Youtube_downloader(thumbnail):` Downloads thumbnails in `.webp` format. (If you need JPG/PNG, use any Photo editing app or an online converter)
    - `Youtube_downloader(video)_V1:` Downloads video with audio (no subtitles).
    - `Youtube_downloader(video)_V2:` Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
-6. Type exit when you are done.
+6.  **Exit:** Type exit when you are done.
+7. **Linux Usage:** If using the compiled binary, navigate to the directory in your terminal and run the program using ./app_name.
 
 ---
 
 ## __Requirements__
 
-- __This works only in Windows as this is a Windows build(I can't make other os builds).__
-- __Make sure you have FFmpeg installed.__
-- __To install via Windows, open Terminal or PowerShell(preferably as Administrator) and run this command:__
+* **Compatibility:** __This works in Windows i.e Windows 10 & 11 and Linux (I can't make macOS build).__
+* __If you use the source code instead of the compiled app, you must install the following:__
+    * `yt-dlp` library and `yt-dlp-ejs` dependency.
+    * `FFmpeg`
+    * `Node.js`
+* __Installation via Windows, open Terminal or PowerShell(preferably as Administrator) and run this command:__
   ```
   winget install FFmpeg
   ```
-- __The program may show a security warning the first time you run it. If this happens, click on More info -> Run anyway.__
+  ```
+  winget install Nodejs
+  ```
+* __Installation via Linux, open Terminal and run these command:__
+
+   - For Fedora, CentOS, and RHEL linux distros
+     ```
+     sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
+     ```
+     ```
+     sudo dnf install nodejs
+     ```
+   - For Ubuntu, Debian, Mint, and Kali Linux distros
+     ```
+     sudo apt install ffmpeg
+     ```
+     ```
+     sudo apt install nodejs npm 
+     ```
+   - For other Linux distros/macOS search in the internet 
+
+> [!Note]
+> The program may show a security warning the first time you run the compiled app __*on Windows*__. If this happens, click on
+>* **More info -> Run anyway.**
 
 ---
 
 ## __Tips__
 
-- Running PowerShell or Terminal as Administrator is recommended, though not always required.
+- Running PowerShell or Terminal as Administrator is recommended, though not always required(for windows users).
 - If subtitles are not available in English/Hindi and even auto-generate English/Hindi, the downloader will try to download auto translated onces but that doesn't work that often.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
 - `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles, to add the subtitles  in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
-- If anytime the downloader fails randomly try to download it again and again, then also if it fails please make sure to update FFmpeg and download the latest build which i will be providing in Github.
+- If anytime the downloader fails randomly try to download it again and again, then also if it fails please make sure to download the latest build which i will be providing in Github.
 
 ---
 
