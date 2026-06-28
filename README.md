@@ -39,7 +39,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
    - For Fedora, CentOS, and RHEL linux distros
      ```
-     sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
+     sudo dnf install ffmpeg --allowerasing
      ```
      ```
      sudo dnf install nodejs
