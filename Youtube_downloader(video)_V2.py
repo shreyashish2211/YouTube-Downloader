@@ -37,7 +37,8 @@ def download_video(link, resolution):
             print("Download complete!")
             print(f"Files should be visible here: {os.getcwd()}")
     except Exception:
-        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube-Downloader")
+        print("Click here to get the latest version: https://github.com/shreyashish2211/YouTube-Downloader/releases")
         
 def main_menu():
     while True:
@@ -56,7 +57,7 @@ def main_menu():
             download_video(link, resolution)
 
         else:
-            print("Invalid input. Please enter a valid link and resolution.")
+            print("Invalid input. Please enter a valid YouTube link and resolution.")
             
 if __name__ == "__main__":
     main_menu()

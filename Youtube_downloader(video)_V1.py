@@ -53,6 +53,6 @@ def main_menu():
             download_video(link, resolution)
 
         else:
-            print("Invalid input. Please enter a valid link and resolution.")
+            print("Invalid input. Please enter a valid YouTube link and resolution.")
 if __name__ == "__main__":
     main_menu()

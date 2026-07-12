@@ -4,13 +4,13 @@ import os
 
 def download_audio(link):
     ydl_opts = {
-        'format': 'bestaudio/best',  # Download only the best audio quality
-        'outtmpl': '%(title)s.%(ext)s',  # Save file name for the video title
+        'format': 'bestaudio/best',
+        'outtmpl': '%(title)s.%(ext)s',
         'writethumbnail': True,
         'postprocessors': [{
-            'key': 'FFmpegExtractAudio',       # Extract audio directly
-            'preferredcodec': 'mp3',           # Convert to mp3
-            'preferredquality': '320',         # Set mp3 quality
+            'key': 'FFmpegExtractAudio',       
+            'preferredcodec': 'mp3',           
+            'preferredquality': '320',
         },
         {
             'key': 'FFmpegMetadata',  # Key to activate metadata embedding
@@ -31,7 +31,8 @@ def download_audio(link):
             print(f"Files should be visible here: {os.getcwd()}")
             
     except Exception:
-        print("Error downloading video: Please try again/later or Update to the latest version of YouTube Downloader")
+        print("Error downloading video: Please try again/later or Update to the latest version of YouTube-Downloader")
+        print("Click here to get the latest version: https://github.com/shreyashish2211/YouTube-Downloader/releases")
 
 def main_menu():
     while True:  
