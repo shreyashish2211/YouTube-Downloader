@@ -23,7 +23,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __Requirements__
 
-* **Compatibility:** __This works in Windows i.e Windows 10 & 11 and Linux (I can't make macOS build).__
+* **Compatibility:** __This works in Windows, i.e Windows 10 & 11, and Linux (I can't make macOS build).__
 * __If you use the source code instead of the compiled app(You have to Install FFmpeg, if you are using the compiled app), you must install the following:__
     * `yt-dlp` library and `yt-dlp-ejs` dependency.
     * `FFmpeg`
@@ -35,9 +35,9 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
   ```
   winget install Nodejs
   ```
-* __Installation via Linux, open Terminal and run these command:__
+* __Installation via Linux: open Terminal and run these commands:__
 
-   - For Fedora, CentOS, and RHEL linux distros
+   - For Fedora, CentOS, and RHEL Linux distros
      ```
      sudo dnf install ffmpeg --allowerasing
      ```
@@ -51,7 +51,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
      ```
      sudo apt install nodejs npm 
      ```
-   - For other Linux distros/macOS search in the internet 
+   - For other Linux distros/macOS, search on the internet 
 
 > [!Note]
 > The program may show a security warning the first time you run the compiled app __*on Windows*__. If this happens, click on
@@ -61,11 +61,11 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __Tips__
 
-- Running PowerShell or Terminal as Administrator is recommended, though not always required(for windows users).
-- If subtitles are not available in English/Hindi and even auto-generate English/Hindi, the downloader will try to download auto translated onces but that doesn't work that often.
+- Running PowerShell or Terminal as Administrator is recommended, though not always required(for Windows users).
+- If subtitles are not available in English/Hindi and even auto-generated English/Hindi, the downloader will try to download auto-translated ones, but that doesn't work that often.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
-- `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles to add the subtitles in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
-- **If anytime the downloader fails randomly try to download it again and again, then also if it fails please make sure to download the latest build which i will be providing in Github.**
+- `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles, so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles to add the subtitles in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
+- **If the downloader fails randomly at any time, try downloading it again and again; then also, if it fails, please make sure to download the latest build, which I will be providing on GitHub.**
 
 ---
 ## License
