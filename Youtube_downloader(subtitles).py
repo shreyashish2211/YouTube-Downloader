@@ -22,7 +22,7 @@ def download_subtitle(link):
             print(f"Files should be visible here: {os.getcwd()}")
             
     except Exception:
-        print("Error downloading video: Please try again/later or Update to the latest version of YouTube-Downloader")
+        print("Error downloading subtitles: Please try again/later or Update to the latest version of YouTube-Downloader")
         print("Click here to get the latest version: https://github.com/shreyashish2211/YouTube-Downloader/releases")
         
 def main_menu():
