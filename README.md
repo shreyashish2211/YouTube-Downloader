@@ -61,9 +61,9 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __Tips__
 
-- Running PowerShell or Terminal as Administrator is recommended, though not always required(for Windows users).
-- If subtitles are not available in English/Hindi and even auto-generated English/Hindi, the downloader will try to download auto-translated ones, but that doesn't work that often.
+- Use the source code recommended.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
+- If subtitles are not available in English/Hindi and even auto-generated English/Hindi, the downloader will try to download auto-translated ones, but that doesn't work that often.
 - `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles, so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles to add the subtitles in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
 - **If the downloader fails randomly at any time, try downloading it again and again; then also, if it fails, please make sure to download the latest build, which I will be providing on GitHub.**
 
