@@ -5,6 +5,7 @@ import os
 def download_audio(link):
     ydl_opts = {
         'format': 'bestaudio/best',
+        #'outtmpl': '%(playlist_index)s. %(title)s.%(ext)s', # Use this when downloading a playlist in order
         'outtmpl': '%(title)s.%(ext)s',
         'writethumbnail': True,
         'postprocessors': [{
@@ -21,6 +22,8 @@ def download_audio(link):
         }],
         'no_warnings': True,
         'noplaylist': False,
+        'cookiefile': 'youtube.com_cookies.txt',
+
     }
 
     try:
