@@ -7,7 +7,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 ## __General Instructions__
 
 1. **Safety First:** This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I have even shared the source code; you can check it out.
-2. **Copy URL:** Copy the URL of the YouTube video you want to download.
+2. **Copy URL:** Copy the URL link of the YouTube video you want to download.
 3. **Paste URL:** Paste the URL link into "Enter the link to download." when you start the app.
 4. **Resolution:** Choose the appropriate resolution you want while downloading the video.
 5. **Choose the appropriate downloader option:**
