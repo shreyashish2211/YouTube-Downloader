@@ -9,7 +9,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 1. **Safety First:** This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I have even shared the source code; you can check it out.
 2. **Copy URL:** Copy the URL of the YouTube video you want to download.
 3. **Paste URL:** Paste the URL link into "Enter the link to download." when you start the app.
-4. **Resolution:** Choose the appropriate resolution you want to have while downloading video.
+4. **Resolution:** Choose the appropriate resolution you want while downloading the video.
 5. **Choose the appropriate downloader option:**
    - `Youtube_downloader(audio): ` Downloads only the audio in `.mp3` format.
    - `Youtube_downloader(subtitles):` Downloads only the subtitles, i.e. English and Hindi subtitles.
@@ -61,10 +61,10 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __Tips__
 
-- Use the source code recommended.
+- Use the source code; it's more recommended than using the compiled app.
 - Ensure your internet connection is stable and good for faster and more reliable downloads.
 - If subtitles are not available in English/Hindi and even auto-generated English/Hindi, the downloader will try to download auto-translated ones, but that doesn't work that often.
-- `Youtube_downloader(video)_V2` may fail in downloading some videos and subtitles, so use `Youtube_downloader(video)_V1` for video and `Youtube_downloade(subtitles)` for subtitles to add the subtitles in the video. **Use this when `Youtube_downloader(video)_V2` fails.**
+- `Youtube_downloader(video)_V2` may fail to download some videos and subtitles, so use `Youtube_downloader(video)_V1` for video and `Youtube_downloader(subtitles)` for subtitles to add the subtitles to the video. **Use this when `Youtube_downloader(video)_V2` fails.**
 - **If the downloader fails randomly at any time, try downloading it again and again; then also, if it fails, please make sure to download the latest build, which I will be providing on GitHub.**
 
 ---
