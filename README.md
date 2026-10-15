@@ -6,13 +6,13 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __General Instructions__
 
-1. **Safety First:** This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I have even shared the source code you can check it out.
-2. **Copy URL:** Copy the URL link of the YouTube video you want to download.
+1. **Safety First:** This application doesn't contain any malware or viruses. It was created solely for downloading YouTube content safely. I have no intention of making any virus or malware to harm others. I have even shared the source code; you can check it out.
+2. **Copy URL:** Copy the URL of the YouTube video you want to download.
 3. **Paste URL:** Paste the URL link into "Enter the link to download." when you start the app.
 4. **Resolution:** Choose the appropriate resolution you want to have while downloading video.
 5. **Choose the appropriate downloader option:**
    - `Youtube_downloader(audio): ` Downloads only the audio in `.mp3` format.
-   - `Youtube_downloader(subtitles):` Downloads only the Subtitles i.e. English and Hindi subtitles.
+   - `Youtube_downloader(subtitles):` Downloads only the subtitles, i.e. English and Hindi subtitles.
    - `Youtube_downloader(thumbnail):` Downloads thumbnails in `.webp` format. (If you need JPG/PNG, use any Photo editing app or an online converter)
    - `Youtube_downloader(video)_V1:` Downloads video with audio (no subtitles).
    - `Youtube_downloader(video)_V2:` Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
@@ -23,8 +23,8 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 
 ## __Requirements__
 
-* **Compatibility:** __This works in Windows, i.e Windows 10 & 11, and Linux (I can't make macOS build).__
-* __If you use the source code instead of the compiled app (*You have to Install FFmpeg, if you are using the compiled app*), you must install the following:__
+* **Compatibility:** __This works on Windows i.e Windows 10 & 11; and Linux (I can't make a macOS build).__
+* __If you use the source code instead of the compiled app (*You have to install FFmpeg if you are using the compiled app*), you must install the following:__
     * `yt-dlp` library and `yt-dlp-ejs` dependency.
     * `FFmpeg`
     * `Node.js`
