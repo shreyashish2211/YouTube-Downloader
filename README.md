@@ -17,7 +17,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
    - `Youtube_downloader(video)_V1:` Downloads video with audio (no subtitles).
    - `Youtube_downloader(video)_V2:` Downloads video with audio and subtitles. By default, it downloads English subtitles and auto-generated English subtitles.
 6.  **Exit:** Type exit when you are done.
-7. **Linux Usage:** If using the compiled binary, navigate to the directory in your terminal and run the program using ./app_name.
+7. **Linux Usage:** If using the compiled binary, navigate to the directory in your terminal and run the program using **./app_name.**
 
 ---
 
