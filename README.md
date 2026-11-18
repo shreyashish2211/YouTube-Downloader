@@ -24,6 +24,7 @@ __A safe, efficient, and user-friendly tool for downloading YouTube content acro
 ## __Requirements__
 
 * **Compatibility:** __This works on Windows i.e Windows 10 & 11; and Linux (I can't make a macOS build).__
+  - Download the latest version from [Here](https://github.com/shreyashish2211/YouTube-Downloader/releases/latest)
 * __If you use the source code instead of the compiled app (*You have to install FFmpeg if you are using the compiled app*), you must install the following:__
     * `yt-dlp` library and `yt-dlp-ejs` dependency.
     * `FFmpeg`
